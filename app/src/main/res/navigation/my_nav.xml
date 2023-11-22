@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/main_Fragment">
+
+    <fragment
+        android:id="@+id/main_Fragment"
+        android:name="com.borja.android.borchxat.ui.main.MainFragment"
+        android:label="Main"
+        tools:layout="@layout/fragment_main">
+
+        <action
+            android:id="@+id/action_main_fragment_to_chat_fragment"
+            app:destination="@id/chat_Fragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/chat_Fragment"
+        android:name="com.borja.android.borchxat.ui.chat.ChatFragment"
+        android:label="Chat"
+        tools:layout="@layout/fragment_chat">
+
+        <action
+            android:id="@+id/action_back"
+            app:destination="@id/main_Fragment" />
+
+    </fragment>
+
+</navigation>

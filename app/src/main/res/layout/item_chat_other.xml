@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvDateOther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/hour_date_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="9 of December" />
+
+    <ImageView
+        android:id="@+id/ivUser"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        tools:background="@color/hour_date_color"
+        android:layout_marginHorizontal="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardChat"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvNameOther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardChat"
+        app:layout_constraintStart_toStartOf="@id/ivUser"
+        tools:text="Borchx" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="1dp"
+        app:cardBackgroundColor="@color/card_me_background"
+        app:cardCornerRadius="12dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDateOther">
+
+        <TextView
+            android:id="@+id/tvChatOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="9dp"
+            android:textColor="@color/message_me_color"
+            tools:text="Este es mi mensaje" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/tvHourOther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/hour_date_color"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardChat"
+        app:layout_constraintStart_toEndOf="@+id/cardChat"
+        tools:text="12:45" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

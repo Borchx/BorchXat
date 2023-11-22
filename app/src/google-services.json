@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1064846112665",
+    "firebase_url": "https://borchxat-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "borchxat",
+    "storage_bucket": "borchxat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064846112665:android:94d883207b6869c84c0508",
+        "android_client_info": {
+          "package_name": "com.borja.android.borchxat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvSqdn8wYQ9-TZ7x-h1kdXKU5-mokwOlU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
